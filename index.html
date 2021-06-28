@@ -41,12 +41,12 @@
         <label for="description">Description</label>
         <textarea class="form-control" id="description" rows="6"></textarea>
       </div>
-      <button type="submit" id="add" class="btn btn-primary">
+      <a type="submit" id="add" class="link link-primary">
         Add to List
-      </button>
-      <button type="submit" id="clear" class="btn btn-primary" onclick="clearStorage()">
+      </a>
+      <a type="submit" id="clear" class="link link-secondary" onclick="clearStorage()">
         Clear List
-      </button>
+      </a>
 
       <div id="items" class="my-4">
         <h2>Your Items</h2>
@@ -64,7 +64,7 @@
               <th scope="row">1</th>
               <td>Get some Coffee</td>
               <td>You need coffee as you are a coder</td>
-              <td><button class="btn btn-sm btn-primary">Delete</button></td>
+              <td><a class="link link-primary">Delete</a></td>
             </tr>
           </tbody>
         </table>
@@ -121,7 +121,7 @@
               <th scope="row">${index +1}</th>
               <td>${element[0]}</td>
               <td>${element[1]}</td>
-              <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td>
+              <td><a class="link link-secondary" onclick="deleted(${index})">Delete</a></td>
             </tr>`;
 
         });

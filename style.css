@@ -45,6 +45,18 @@ ol, ul{
   margin-bottom: 1rem ; */
 }
 
+.link:hover{
+  text-decoration: none;
+}
+
+.link-primary:hover{
+  color: whitesmoke;
+}
+
+.link-secondary:hover{
+  color: var(--primary-color);
+}
+
 .link-primary {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
